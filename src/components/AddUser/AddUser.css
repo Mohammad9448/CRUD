@@ -1,0 +1,85 @@
+.create-form{
+    border: 1px solid black;
+    padding-bottom: 30px;
+    border-radius: 8px;
+ 
+    padding: 0 40px 30px;
+   
+}
+.error-list {
+    color: red;
+}
+.create-form h2{
+    font-size: 34px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #2fa06c;
+    text-align: center;
+}
+.create-form form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.form-control  {
+  flex-basis: 100%;
+  margin-bottom: 15px
+}
+
+.form-control input {
+    height: 50px;
+    width: 100%;
+    border-color: #44444438;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 18px;
+
+}
+.submit-control {
+   
+        flex-basis: 100%; 
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 50px;
+   
+}
+.submit-control input {
+    width: 150px;
+    height: 45px;
+    background-color: rgb(47 160 108);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: .5px solid #b8b0b0;
+    border-radius: 20%;
+    color:white;
+
+
+}
+.submit-control input:hover {
+    background-color: rgb(47 160 108 / 85%);
+    color: #333;
+    border-width: 1px;
+    border-color: #3333339c;
+
+}
+@media only screen and (min-width: 768px) {
+    .form-control {
+        flex-basis: 48%;
+        
+        margin: 1%;
+    }
+   
+  
+}
+@media only screen and (min-width: 480px)
+and (max-width:600px)
+{
+    .form-control {
+        flex-basis: 100%;
+        
+        margin: 2%;
+    }
+   
+   
+}

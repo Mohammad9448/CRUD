@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
+import React,{useState} from 'react';
+import AllUsers from './components/AllUsers/AllUsers';
+import AddUser from './components/AddUser/AddUser';
 import './App.css';
 
 function App() {
+  const [Users,setUsers] = useState([]);
+
+  function addUserEventHandler(user) {
+    setUsers((prev)=>{
+      return [...prev, user];
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <AddUser onAddUser={addUserEventHandler} />
+      <AllUsers users = {Users} />
     </div>
   );
 }
