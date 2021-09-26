@@ -14,9 +14,10 @@ return (
         </thead>
         <tbody>
     {props.users.map(x=>{
-        return (
+        return (     
+
             <tr key={x.id}>
-                <td>{x.id}</td>
+                <td>{x.id} ggg</td>
                 <td>{x.name}</td>
                 <td>{x.age}</td>
                 <td>{x.gender}</td>
