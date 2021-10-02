@@ -1,0 +1,22 @@
+.tab {
+  
+    margin: 20px auto !important;
+   
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.tab th {
+  padding: 20px;
+  text-align: center;
+  background-color: #2fa06c91;
+  min-width: 50px;
+}
+.tab td {
+    padding: 20px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    transition: 1.5s ease-in-out;
+  }
+  #deleteBtn {
+    margin-left: 5px;
+  }

@@ -8,10 +8,7 @@ const AddUser = (props) => {
     const [isInputvalid,setIsInputvalid] = useState(false);
     
     const [wasFormSubmitted,setWasFormSubmitted] = useState(false);
- 
-
-
-
+   //SubmitForrmEventHandler
   function submitFormHandler(e){
     e.preventDefault();
     let nameval = nameField.current.value;
@@ -25,7 +22,7 @@ const AddUser = (props) => {
         return;
     }
     setIsInputvalid(true);
-    let user = { id:Math.round(Math.random()*1000000), name : nameval , age:ageVal , gender:genVal}
+    let user = {  name : nameval , age:ageVal , gender:genVal}
     props.onAddUser(user);
     nameField.current.value = "";
     ageField.current.value = "";

@@ -2,8 +2,9 @@
     border: 1px solid black;
     padding-bottom: 30px;
     border-radius: 8px;
- 
+    position: relative;
     padding: 0 40px 30px;
+
    
 }
 .error-list {
@@ -23,7 +24,8 @@
 }
 .form-control  {
   flex-basis: 100%;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  border:none !important;
 }
 
 .form-control input {
